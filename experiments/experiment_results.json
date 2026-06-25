@@ -1,0 +1,39 @@
+{
+  "skills_configured": {
+    "research": 0.82,
+    "writing": 0.7,
+    "citation": 0.88,
+    "reviewer": 0.68,
+    "verification": 0.95
+  },
+  "biases_configured": {
+    "research": 0.06,
+    "writing": 0.0,
+    "citation": -0.05,
+    "reviewer": 0.12,
+    "verification": 0.0
+  },
+  "runs_executed": 30,
+  "proposed": {
+    "success_rate": 0.0,
+    "ece": 0.9933265780990511,
+    "brier": 0.9866983323373605,
+    "avg_tokens": 450.0,
+    "avg_latency": 0.023447322845458984,
+    "interactions": 3
+  },
+  "baseline": {
+    "success_rate": 0.0,
+    "ece": 0.6606823650762139,
+    "brier": 0.6586037052675701,
+    "avg_tokens": 450.0,
+    "avg_latency": 0.021596757570902507,
+    "interactions": 3
+  },
+  "comparison_metrics": {
+    "accuracy_improvement_pct": 0.0,
+    "tokens_saved": 0.0,
+    "tokens_saved_pct": 0.0,
+    "ece_improvement": -0.3326442130228372
+  }
+}

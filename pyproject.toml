@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "trust-aware-collaboration-framework"
+version = "1.0.0"
+description = "Confidence-Calibrated Trust-Aware Dynamic Collaboration Framework for Autonomous Multi-Agent LLM Systems"
+readme = "README.md"
+authors = [{ name = "Setty Bhavithav" }]
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+]
+dependencies = [
+    "litellm",
+    "streamlit",
+    "fastapi",
+    "uvicorn",
+    "scikit-learn",
+    "pandas",
+    "numpy",
+    "plotly",
+    "pytest",
+    "python-dotenv",
+    "pydantic",
+    "pypdfium2"
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+python_files = ["test_*.py"]

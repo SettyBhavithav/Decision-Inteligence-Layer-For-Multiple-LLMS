@@ -1,0 +1,44 @@
+version: '3.8'
+
+services:
+  # Redis Cache Instance
+  redis:
+    image: redis:7-alpine
+    container_name: trust_framework_redis
+    ports:
+      - "6379:6379"
+    restart: always
+
+  # FastAPI Backend API Server
+  backend:
+    build: .
+    container_name: trust_framework_backend
+    command: uvicorn backend.app:app --host 0.0.0.0 --port 8000 --reload
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      - REDIS_URL=redis://redis:6379/0
+    depends_on:
+      - redis
+    restart: always
+
+  # Streamlit Interactive Web UI
+  frontend:
+    build: .
+    container_name: trust_framework_frontend
+    command: streamlit run app/main.py --server.port 8501 --server.address 0.0.0.0
+    ports:
+      - "8501:8501"
+    volumes:
+      - .:/app
+    env_file:
+      - .env
+    environment:
+      - API_URL=http://backend:8000/api
+    depends_on:
+      - backend
+    restart: always

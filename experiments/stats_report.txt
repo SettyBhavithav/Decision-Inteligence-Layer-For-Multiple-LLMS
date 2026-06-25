@@ -1,0 +1,107 @@
+============================================================
+STATISTICAL ANALYSIS REPORT
+============================================================
+
+Metric: success_rate (RQ1: Task quality vs baselines)
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.220 ± 0.175
+    t-test p-value = 0.3994 | Significant: NO
+    Cohen's d = 0.3853 (small)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.500 ± 0.271
+    t-test p-value = 0.1582 | Significant: NO
+    Cohen's d = -0.7878 (medium)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.440 ± 0.158
+    t-test p-value = 0.0886 | Significant: NO
+    Cohen's d = -0.6981 (medium)
+
+Metric: success_rate (RQ2: Long-term reliability (trust engine))
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.220 ± 0.175
+    t-test p-value = 0.3994 | Significant: NO
+    Cohen's d = 0.3853 (small)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.500 ± 0.271
+    t-test p-value = 0.1582 | Significant: NO
+    Cohen's d = -0.7878 (medium)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.440 ± 0.158
+    t-test p-value = 0.0886 | Significant: NO
+    Cohen's d = -0.6981 (medium)
+
+Metric: ece (RQ3: Confidence calibration quality)
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.373 ± 0.192
+    Baseline : 0.574 ± 0.201
+    t-test p-value = 0.0585 | Significant: NO
+    Cohen's d = -1.0230 (large)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.373 ± 0.192
+    Baseline : 0.301 ± 0.249
+    t-test p-value = 0.5664 | Significant: NO
+    Cohen's d = 0.3222 (small)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.373 ± 0.192
+    Baseline : 0.256 ± 0.232
+    t-test p-value = 0.2142 | Significant: NO
+    Cohen's d = 0.5511 (medium)
+
+Metric: accept_rate (RQ4: Decision correctness & efficiency)
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.220 ± 0.175
+    t-test p-value = 0.3994 | Significant: NO
+    Cohen's d = 0.3853 (small)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.500 ± 0.271
+    t-test p-value = 0.1582 | Significant: NO
+    Cohen's d = -0.7878 (medium)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.300 ± 0.236
+    Baseline : 0.440 ± 0.158
+    t-test p-value = 0.0886 | Significant: NO
+    Cohen's d = -0.6981 (medium)
+
+Metric: filter_ratio (RQ5: Communication overhead reduction)
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.000 ± 0.000
+    Baseline : 0.000 ± 0.000
+    t-test p-value = NaN | Significant: NO
+    Cohen's d = 0.0000 (negligible)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.000 ± 0.000
+    Baseline : 0.000 ± 0.000
+    t-test p-value = NaN | Significant: NO
+    Cohen's d = 0.0000 (negligible)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.000 ± 0.000
+    Baseline : 0.000 ± 0.000
+    t-test p-value = NaN | Significant: NO
+    Cohen's d = 0.0000 (negligible)
+
+Metric: top1_accuracy (RQ6: Failure attribution accuracy)
+  Comparison vs Baseline_A_FixedRule:
+    Proposed : 0.249 ± 0.307
+    Baseline : 1.000 ± 0.000
+    t-test p-value = 0.0000 | Significant: YES ✓
+    Cohen's d = -3.4571 (large)
+  Comparison vs Baseline_B_Standard:
+    Proposed : 0.249 ± 0.307
+    Baseline : 0.589 ± 0.221
+    t-test p-value = 0.0248 | Significant: YES ✓
+    Cohen's d = -1.2702 (large)
+  Comparison vs Baseline_C_Ablation:
+    Proposed : 0.249 ± 0.307
+    Baseline : 0.288 ± 0.330
+    t-test p-value = 0.7589 | Significant: NO
+    Cohen's d = -0.1235 (negligible)
+
+============================================================

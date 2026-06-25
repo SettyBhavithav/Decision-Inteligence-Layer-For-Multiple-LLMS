@@ -1,0 +1,12 @@
+litellm
+streamlit
+fastapi
+uvicorn
+scikit-learn
+pandas
+numpy
+plotly
+pytest
+python-dotenv
+pydantic
+pypdfium2
