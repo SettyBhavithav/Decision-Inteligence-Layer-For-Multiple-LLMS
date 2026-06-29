@@ -223,3 +223,5 @@ class CitationAgent(BaseAgent):
 # built citation verification agent to cross-check factual claims
 
 # added voting consensus logic between multiple LLM agents
+
+# created project layout for multi-agent LLM decision layer
