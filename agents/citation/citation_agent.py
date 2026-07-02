@@ -227,3 +227,5 @@ class CitationAgent(BaseAgent):
 # created project layout for multi-agent LLM decision layer
 
 # searched arXiv API for claim verification source links
+
+# calculated trust score from 0 to 1 based on source validation
