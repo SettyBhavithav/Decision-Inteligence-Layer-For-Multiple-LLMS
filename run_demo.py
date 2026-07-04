@@ -138,3 +138,5 @@ if __name__ == "__main__":
 # created dynamic router picking best LLM based on prompt difficulty
 
 # created demo script running sample multi-agent research workflow
+
+# built citation verification agent to cross-check factual claims
