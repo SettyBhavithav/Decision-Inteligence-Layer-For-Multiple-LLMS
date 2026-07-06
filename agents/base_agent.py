@@ -240,3 +240,5 @@ class AgentRegistry:
 # searched arXiv API for claim verification source links
 
 # calculated trust score from 0 to 1 based on source validation
+
+# created base agent abstract class and AgentState model
