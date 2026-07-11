@@ -248,3 +248,5 @@ class AgentRegistry:
 # created demo script running sample multi-agent research workflow
 
 # built citation verification agent to cross-check factual claims
+
+# added voting consensus logic between multiple LLM agents
