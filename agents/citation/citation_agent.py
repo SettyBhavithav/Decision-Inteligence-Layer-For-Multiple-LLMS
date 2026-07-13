@@ -249,3 +249,5 @@ class CitationAgent(BaseAgent):
 # created base agent abstract class and AgentState model
 
 # created dynamic router picking best LLM based on prompt difficulty
+
+# created demo script running sample multi-agent research workflow
