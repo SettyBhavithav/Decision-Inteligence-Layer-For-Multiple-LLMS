@@ -1,0 +1,6 @@
+# Configure GitHub Linguist to ignore generated visualization HTML reports
+*.html linguist-vendored=true
+experiments/*.html linguist-vendored=true
+experiments/**/*.html linguist-vendored=true
+frontend/*.html linguist-vendored=true
+templates/*.html linguist-vendored=true
